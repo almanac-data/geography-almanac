@@ -1,9 +1,9 @@
 {
   "name": "Geography Almanac",
   "description": "An open, versioned index of public geographic data.",
-  "count": 10,
+  "count": 11,
   "by_status": {
-    "live": 10
+    "live": 11
   },
   "entries": [
     {
@@ -510,6 +510,60 @@
       "license": "public-domain (Natural Earth Terms of Use)",
       "attribution": "Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.",
       "notes": "Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). The home page says \"Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales\" and that it \"was built through a collaboration of many volunteers and is supported by NACIS (North American Cartographic Information Society)\". The Downloads page offers \"all vector themes as SHP (576 mb), SQLite (423 mb), or GeoPackage (436 mb)\" and per-scale Cultural, Physical and Raster pages. Publisher honesty: this is a volunteer-made dataset, not an official or treaty body. jurisdiction.scope is set to international-ngo only because the schema has no better value. Its boundaries are cartographic generalisations, and its treatment of disputed borders reflects the project's editorial choices, not any government's position; prefer UN SALB, Eurostat GISCO or national agencies where official boundaries matter.\nLicence checked 2026-11-01: Terms of Use (https://www.naturalearthdata.com/about/terms-of-use/) state \"All versions of Natural Earth raster + vector map data found on this website are in the public domain\" and \"No permission is needed to use Natural Earth. Crediting the authors is unnecessary\". The attribution recorded is the optional \"long text\" citation the page suggests. The page also quotes a Washington Post licence for some source data granted to Natural Earth. The site footer \"© 2009 - 2026. Natural Earth. All rights reserved.\" refers to the website, not the data. Not checked: the current version number (the GitHub repo's latest-release API returned nothing), or the raster themes.\n"
+    },
+    {
+      "id": "nrcan-canvec",
+      "type": "dataset",
+      "title": "Natural Resources Canada CanVec Series (Topographic Data of Canada)",
+      "description": "Natural Resources Canada's multiscale national topographic vector dataset, the successor to the GeoBase and National Topographic Data Base layers: more than 60 feature classes in eight themes covering transport, administrative boundaries, hydrography, land cover, built features, elevation, resource management and place-name labels.\n",
+      "publisher": "Natural Resources Canada (Canada Centre for Mapping and Earth Observation)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "CA"
+      },
+      "topics": [
+        "topographic-data",
+        "administrative-boundaries",
+        "hydrography",
+        "elevation",
+        "place-names"
+      ],
+      "source": {
+        "canonical_url": "https://open.canada.ca/data/en/dataset/8ba2aa2a-7bb9-4448-b4d7-f164409fe056"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "fgdb",
+        "shp",
+        "kmz",
+        "wms"
+      ],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Canada (national)",
+        "temporal": "1944-2019 (source vintages per the metadata record)",
+        "cadence": "irregular"
+      },
+      "license": "OGL-Canada (Open Government Licence - Canada, per the Open Government Portal record)",
+      "attribution": "Natural Resources Canada, CanVec Series (Topographic Data of Canada)",
+      "notes": "Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). The Open Government Portal record \"Topographic Data of Canada - CanVec Series\" states \"CanVec contains more than 60 topographic features classes organized into 8 themes: Transport Features, Administrative Features, Hydro Features, Land Features, Manmade Features, Elevation Features, Resource Management Features and Toponymic Features.\" Publisher shown as Natural Resources Canada. Metadata: Date Published 2019-03-01, Record Modified 2025-12-22, Temporal Coverage 1944-01-01 to 2019-01-01, Status \"Completed\", Maintenance and Update Frequency \"Not Planned\", so this may be a frozen product rather than a maintained one; worth watching. Resources include prepackaged FGDB and Shapefile download directories, KMZ, WMS and the Geospatial Data Extraction Tool. The legacy geobase.ca host reset the connection, and no NRCan product page was used as the canonical URL because the old NRCan topographic map URLs returned 404.\nLicence checked 2026-11-01: the portal record shows \"Licence: Open Government Licence - Canada\", and the CKAN API (package_show) gives license_url https://open.canada.ca/en/open-government-licence-canada. This is a dataset-level licence field on the official portal. The licence version wasn't read from the licence page; GeoGratis (https://geogratis.gc.ca/) has its own \"Terms and conditions of use\" that weren't read. Not checked: the download directories themselves, or newer NRCan products (Canadian Digital Elevation Model, National Hydro Network), which are separate records.\n"
     }
   ]
 }
