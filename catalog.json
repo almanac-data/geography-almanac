@@ -1,9 +1,9 @@
 {
   "name": "Geography Almanac",
   "description": "An open, versioned index of public geographic data.",
-  "count": 6,
+  "count": 7,
   "by_status": {
-    "live": 6
+    "live": 7
   },
   "entries": [
     {
@@ -309,6 +309,54 @@
       "license": "PDL-1.0 (GSI Content Terms of Use, Public Data License v1.0; Survey Act approval may apply to some uses of survey results)",
       "attribution": "出典：国土地理院ウェブサイト (Source: GSI website, with page URL); state any editing",
       "notes": "Human-verified 2026-11-01: HTTP 200 in headless Chromium only. curl failed on both www.gsi.go.jp and service.gsi.go.jp with \"unsafe legacy renegotiation disabled\" (an OpenSSL TLS incompatibility on GSI's servers, not a block), so this source needs the headless rung. The page \"基盤地図情報サイト\" (last updated 2026-03-07) links to the download service and says \"基盤地図情報をダウンロードする場合には、ダウンロードページでユーザ登録とログインが必要です\" (registration and login are required to download). The download service (https://service.gsi.go.jp/kiban/) showed notices \"2026-10-30 提供データを整備・更新しました（基本項目）\" and \"2026-07-31 ... （数値標高モデル）\", and that the coordinate reference system changed from JGD2011 to JGD2024. GSI also offers a free viewer (FGDV) that exports to Shapefile.\nLicence checked 2026-11-01: GSI's Content Terms of Use (https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html, revised 令和7年11月20日) state \"本サイトのコンテンツには特段の記載が無い限り公共データ利用規約（第1.0 版）（PDL1.0）が適用されています\" (site content is under Public Data License v1.0 unless otherwise stated), with a source credit such as \"出典：国土地理院ウェブサイト（当該ページのURL）\" and a note when content is edited. The same page also mentions applications under the Survey Act (測量法) for copying or using basic survey results, so some uses of this data may need GSI approval; that wasn't worked through. This is a site-wide terms page, not a dataset-specific licence. Not checked: native file formats (GML/JPGIS per the spec, not verified) or the login flow. Format is left empty.\n"
+    },
+    {
+      "id": "ibge-malha-municipal",
+      "type": "dataset",
+      "title": "IBGE Malha Municipal (Brazil municipal and state boundary files)",
+      "description": "IBGE's official digital boundary files for Brazil's political-administrative division: municipalities, states (Unidades da Federação), immediate and intermediate geographic regions, major regions and the country outline, revised each year from new legislation, court decisions and state boundary reports. The boundary set used for the census and all IBGE surveys.\n",
+      "publisher": "Instituto Brasileiro de Geografia e Estatística (IBGE)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "BR"
+      },
+      "topics": [
+        "administrative-boundaries",
+        "municipalities",
+        "census-geography"
+      ],
+      "source": {
+        "canonical_url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "shp"
+      ],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Brazil (country, major regions, states, intermediate and immediate regions, municipalities)",
+        "temporal": "current edition 2025 (earlier editions listed under Edições)",
+        "cadence": "annual"
+      },
+      "license": "unverified — no data-reuse licence found on the product page or the geoftp download folder; IBGE's site terms cover portal use and privacy",
+      "attribution": "Fonte: IBGE, Malha Municipal 2025",
+      "notes": "Human-verified 2026-11-01: HTTP 200 in headless Chromium, page \"Malha Municipal | IBGE\", but only after a Cloudflare \"Just a moment...\" challenge cleared (about 20 seconds' wait, with a desktop Chrome user agent); curl with a browser User-Agent and a quick headless load both got HTTP 403. The \"O que é\" tab says the product \"retrata a situação vigente da Divisão Político Administrativa (DPA), através da representação vetorial das linhas definidoras das divisas estaduais e limites municipais, utilizada na coleta dos Censos Demográficos e demais pesquisas do IBGE\". \"Sobre a publicação - 2025\" says the 2025 edition has 5573 geocodes (5569 municipalities plus DF, Fernando de Noronha and two operational lagoon areas), is in Shapefile format, SIRGAS 2000 geographic coordinates, UTF-8. Download links go to https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/ (HTTP 200 to curl, no challenge), e.g. Brasil/BR_Municipios_2025.zip.\nLicence checked 2026-11-01: not verified. Neither the product page nor the geoftp folder listing carries a licence statement. The page points to a PDF, \"Malha Municipal Digital e Áreas Territoriais 2025: Informações Técnicas e Legais para a Utilização dos Dados Publicados\" (https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2102268), which may contain usage terms but wasn't read. Other IBGE entries in this workspace also leave the licence unverified. The attribution follows Brazilian convention and isn't a quoted IBGE requirement. Not checked: the zip contents, the census-tract (setores censitários) meshes, and IBGE's geoservices.\n"
     }
   ]
 }
