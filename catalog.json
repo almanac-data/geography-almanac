@@ -1,9 +1,9 @@
 {
   "name": "Geography Almanac",
   "description": "An open, versioned index of public geographic data.",
-  "count": 14,
+  "count": 15,
   "by_status": {
-    "live": 14
+    "live": 15
   },
   "entries": [
     {
@@ -720,6 +720,54 @@
       "license": "public-domain (US Gov work; USGS Copyrights and Credits policy)",
       "attribution": "U.S. Geological Survey, Geographic Names Information System (GNIS)",
       "notes": "Human-verified 2026-11-01: HTTP 200 to curl with a browser User-Agent; a plain curl User-Agent got 403 and headless Chromium got a CloudFront 403 page on usgs.gov. The page calls GNIS \"The Federal and national standard for geographic nomenclature\" and links domestic and Antarctic name search tools, a GNIS REST ArcGIS service and data downloads. It says GNIS holds \"the Federally recognized name of each feature\" for physical and cultural features \"but not including roads and highways\". The Download GNIS Data page (https://www.usgs.gov/us-board-on-geographic-names/download-gnis-data, HTTP 200) states \"Data products are refreshed every other month\", offers \"pipe-delimited text (TXT) files\" plus \"file geodatabase [GDB] and GeoPackage [GPKG]\", downloaded through The National Map Downloader, and notes an Archive file of \"Static legacy domestic and Antarctica names data last updated August 2021\".\nLicence checked 2026-11-01: USGS Copyrights and Credits (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits) states \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain\". This is an agency-wide data policy. Cadence is recorded as irregular although the download page says products are refreshed every other month (no matching schema value). Foreign names are not in GNIS; see nga-geonet-names-server. Not checked: the REST service or the file contents.\n"
+    },
+    {
+      "id": "usgs-the-national-map",
+      "type": "dataset",
+      "title": "USGS The National Map (3DEP elevation, hydrography, boundaries and topographic base data)",
+      "description": "The USGS National Geospatial Program's suite of nationally consistent base geospatial layers for the United States: 3D Elevation Program (3DEP) lidar and DEMs, hydrography (National Hydrography Dataset and its 3D Hydrography Program successor), boundaries, transportation, structures, geographic names, land cover and orthoimagery, plus US Topo and historical topographic maps, delivered through the TNM Downloader and web services.\n",
+      "publisher": "U.S. Geological Survey, National Geospatial Program",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "elevation",
+        "lidar",
+        "hydrography",
+        "topographic-maps",
+        "base-maps"
+      ],
+      "source": {
+        "canonical_url": "https://www.usgs.gov/programs/national-geospatial-program/national-map"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States and territories",
+        "temporal": "varies by layer (current base data plus historical topographic maps)",
+        "cadence": "irregular"
+      },
+      "license": "public-domain (US Gov work; USGS Copyrights and Credits policy)",
+      "attribution": "U.S. Geological Survey, The National Map",
+      "notes": "Human-verified 2026-11-01: HTTP 200 to curl with a browser User-Agent; a plain curl User-Agent got 403, and headless Chromium got a CloudFront \"403 ERROR The request could not be satisfied\" page, so usgs.gov is sensitive to client type. The page says \"The National Map is a suite of products, services, and applications that provide access to base geospatial information representing the topography, natural landscape, and built environment of the United States and its territories\" and that it \"supports digital and print versions of topographic maps, data download, web map services, and online viewing\". The program menu lists 3D Elevation Program, 3D Hydrography Program, Topographic Maps and the U.S. Board on Geographic Names. The TNM Downloader (https://apps.nationalmap.gov/downloader/) answered HTTP 200 to curl.\nLicence checked 2026-11-01: USGS Copyrights and Credits (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits) states \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain\", with the caveat that some non-USGS material is copyrighted and marked. This is an agency-wide data policy. Partner-contributed layers in TNM may carry their own terms. Not checked: individual layer formats, the TNM Access API, and whether the National Hydrography Dataset is still offered alongside 3DHP. Format is left empty. Geographic names are catalogued separately as usgs-gnis.\n"
     }
   ]
 }
