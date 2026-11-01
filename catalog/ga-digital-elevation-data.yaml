@@ -1,0 +1,40 @@
+id: ga-digital-elevation-data
+type: dataset
+title: Geoscience Australia Digital Elevation Data (Elvis and national DEMs)
+description: |
+  Geoscience Australia's hub for Australian elevation and bathymetry: the Elvis Elevation and Depth portal (open LiDAR and DEM data from Commonwealth, state and territory agencies under ICSM), plus packaged national products such as the SRTM-derived 1 second and 3 second DEMs, the 5 m LiDAR-derived DEM and 5 m drainage-catchment DEMs.
+publisher: Geoscience Australia
+jurisdiction:
+  scope: national
+  country: AU
+topics:
+- elevation
+- dem
+- lidar
+- bathymetry
+source:
+  canonical_url: https://www.ga.gov.au/scientific-topics/national-location-information/digital-elevation-data
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Australia (national mosaics; LiDAR and catchment DEMs for covered areas)
+  temporal: varies by product (5 m LiDAR DEM from surveys 2001-2015; SRTM-derived DEMs from 2000 data)
+  cadence: irregular
+license: CC-BY-4.0 (Geoscience Australia website copyright notice; products with their own statements excepted)
+attribution: © Commonwealth of Australia (Geoscience Australia) <year>
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl; content read with headless Chromium). The page describes "Elvis - Elevation and Depth - Foundation Spatial Data", which "brings together open data from Commonwealth, state and territory governments", and lists packaged data: "Drainage Catchment 5m Digital Elevation Models", "Digital Elevation Model (DEM) of Australia derived from LiDAR 5 Metre Grid" (from "some 236 individual LiDAR surveys between 2001 and 2015"), "SRTM-derived 1 Second Digital Elevation Models Version 1.0" (DEM, DEM-S, DEM-H) and the "3 second SRTM Derived Digital Elevation Model (DEM) Version 1.0". The Elvis portal itself (https://elevation.fsdf.org.au/) also answered HTTP 200.
+  Licence checked 2026-11-01: GA's copyright notice (https://www.ga.gov.au/copyright) states "All material on this website is licensed under the Creative Commons Attribution 4.0 International Licence, with the exception of ... products or content with specific copyright or other statements" and asks for attribution "© Commonwealth of Australia (Geoscience Australia) 2026". This is a site-wide notice, not a product-specific licence. Elvis data from state and territory agencies may carry their custodians' own licences. The page also says the 3 second DEM "was produced for use by government and the public under Creative Commons attribution". Not checked: file formats, the individual product metadata records on ecat.ga.gov.au, or Elvis order and download terms. Format is left empty.

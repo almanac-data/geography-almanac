@@ -1,9 +1,9 @@
 {
   "name": "Geography Almanac",
   "description": "An open, versioned index of public geographic data.",
-  "count": 4,
+  "count": 5,
   "by_status": {
-    "live": 4
+    "live": 5
   },
   "entries": [
     {
@@ -217,6 +217,52 @@
       "license": "proprietary-noncommercial for boundary layers (GISCO administrative and statistical units copyright clauses; © EuroGeographics); other layers under Eurostat copyright and licence policy",
       "attribution": "© EuroGeographics for the administrative boundaries; Eurostat GISCO",
       "notes": "Human-verified 2026-11-01: HTTP 200 (curl; content read with headless Chromium). The Geodata page lists Administrative units, Statistical units, Population distribution, Grids, Transport networks, Basic services, Geographic accessibility, Land cover and Digital elevation model, and states \"All datasets are provided with their metadata in XML format ... Geographical datasets are provided in a variety of formats.\" Page footer \"Last page update: 11 June 2025\". The Statistical units page lists Census, Coastal, LAU, NUTS and Cities and functional urban areas.\nLicence checked 2026-11-01: the Administrative units page (https://ec.europa.eu/eurostat/web/gisco/geodata/administrative-units) and Statistical units page (https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units) both state that the right to use the data is granted on condition that \"the data will not be used for commercial purposes\" and that the notice \"© EuroGeographics for the administrative boundaries\" is shown; \"If you intend to use the data commercially, please contact EuroGeographics\". The Geodata page says otherwise \"Eurostat's general copyright notice and licence policy applies\" with \"specific rules\" for some datasets. These are data-specific terms. Not checked: the licence of the grid, transport, land cover and elevation layers individually; exact download formats (only the XML metadata statement was seen); the GISCO distribution API.\n"
+    },
+    {
+      "id": "ga-digital-elevation-data",
+      "type": "dataset",
+      "title": "Geoscience Australia Digital Elevation Data (Elvis and national DEMs)",
+      "description": "Geoscience Australia's hub for Australian elevation and bathymetry: the Elvis Elevation and Depth portal (open LiDAR and DEM data from Commonwealth, state and territory agencies under ICSM), plus packaged national products such as the SRTM-derived 1 second and 3 second DEMs, the 5 m LiDAR-derived DEM and 5 m drainage-catchment DEMs.\n",
+      "publisher": "Geoscience Australia",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "AU"
+      },
+      "topics": [
+        "elevation",
+        "dem",
+        "lidar",
+        "bathymetry"
+      ],
+      "source": {
+        "canonical_url": "https://www.ga.gov.au/scientific-topics/national-location-information/digital-elevation-data"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "Australia (national mosaics; LiDAR and catchment DEMs for covered areas)",
+        "temporal": "varies by product (5 m LiDAR DEM from surveys 2001-2015; SRTM-derived DEMs from 2000 data)",
+        "cadence": "irregular"
+      },
+      "license": "CC-BY-4.0 (Geoscience Australia website copyright notice; products with their own statements excepted)",
+      "attribution": "© Commonwealth of Australia (Geoscience Australia) <year>",
+      "notes": "Human-verified 2026-11-01: HTTP 200 (curl; content read with headless Chromium). The page describes \"Elvis - Elevation and Depth - Foundation Spatial Data\", which \"brings together open data from Commonwealth, state and territory governments\", and lists packaged data: \"Drainage Catchment 5m Digital Elevation Models\", \"Digital Elevation Model (DEM) of Australia derived from LiDAR 5 Metre Grid\" (from \"some 236 individual LiDAR surveys between 2001 and 2015\"), \"SRTM-derived 1 Second Digital Elevation Models Version 1.0\" (DEM, DEM-S, DEM-H) and the \"3 second SRTM Derived Digital Elevation Model (DEM) Version 1.0\". The Elvis portal itself (https://elevation.fsdf.org.au/) also answered HTTP 200.\nLicence checked 2026-11-01: GA's copyright notice (https://www.ga.gov.au/copyright) states \"All material on this website is licensed under the Creative Commons Attribution 4.0 International Licence, with the exception of ... products or content with specific copyright or other statements\" and asks for attribution \"© Commonwealth of Australia (Geoscience Australia) 2026\". This is a site-wide notice, not a product-specific licence. Elvis data from state and territory agencies may carry their custodians' own licences. The page also says the 3 second DEM \"was produced for use by government and the public under Creative Commons attribution\". Not checked: file formats, the individual product metadata records on ecat.ga.gov.au, or Elvis order and download terms. Format is left empty.\n"
     }
   ]
 }
