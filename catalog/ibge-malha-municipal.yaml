@@ -27,9 +27,11 @@ status_since: '2026-11-01'
 status_source: curator
 observed:
   checked: '2026-11-01'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 200
+  final_url: https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: Brazil (country, major regions, states, intermediate and immediate regions, municipalities)
   temporal: current edition 2025 (earlier editions listed under Edições)
