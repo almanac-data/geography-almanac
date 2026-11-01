@@ -1,0 +1,49 @@
+id: os-opendata
+type: dataset
+title: Ordnance Survey OpenData (Boundary-Line, Code-Point Open, Open Names, Terrain and other open products)
+description: |
+  Great Britain's national mapping agency's free open data range, downloaded from the OS Data Hub: administrative and electoral boundaries (Boundary-Line), postcode centroids (Code-Point Open), gazetteer, elevation and small-scale base mapping, alongside open products from partners such as the British Geological Survey.
+publisher: Ordnance Survey
+jurisdiction:
+  scope: national
+  country: GB
+topics:
+- administrative-boundaries
+- postcodes
+- place-names
+- elevation
+- base-maps
+source:
+  canonical_url: https://osdatahub.os.uk/data/downloads/open
+access:
+  method:
+  - web
+  - bulk
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- shp
+- gml
+- gpkg
+- mapinfo-tab
+- vector-tiles
+- tiff
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Great Britain (some partner products cover the whole UK)
+  temporal: current editions (Boundary-Line version date October 2026)
+  cadence: irregular
+license: OGL-UK-3.0 (OS Data Hub, "All OpenData can be freely downloaded under the Open Government Licence")
+attribution: Ordnance Survey, OS OpenData (name the product, e.g. Boundary-Line)
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). https://osdatahub.os.uk/downloads/open redirects to https://osdatahub.os.uk/data/downloads/open, which is catalogued; the old www.ordnancesurvey.co.uk/products/os-open-data address returned 404. The page reads "Ordnance Survey provides this free service to download OpenData geospatial datasets from OS and other data providers" and showed "25 Results", including 1:250 000 Scale Colour Raster (version June 2026), Boundary-Line, Code-Point Open and several BGS products. The Boundary-Line page lists coverage "All of Great Britain", supply formats "ESRI Shapefile, GML, GeoPackage, MapInfo TAB, and Vector Tiles", version date October 2026.
+  Licence checked 2026-11-01: the Boundary-Line download page (https://osdatahub.os.uk/downloads/open/BoundaryLine) states "All OpenData can be freely downloaded under the Open Government Licence. Please acknowledge reproduced materials." This is a data-specific statement on the download service. The usual OS wording "Contains OS data © Crown copyright and database right" was not seen on the pages checked. The page lazy-loads, so the full list was read from the public OS Downloads API (https://api.os.uk/downloads/v1/products, no key needed), which returned 25 product ids including BoundaryLine, CodePointOpen, OpenNames, Terrain50, OpenRivers, OpenRoads, OpenUPRN, OpenZoomstack, MiniScale and VectorMapDistrict. Not checked: every product's own page (partner products such as BGS may carry their own terms) or the other OS Data Hub APIs, some of which need a key.
