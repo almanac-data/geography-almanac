@@ -28,9 +28,11 @@ status_since: '2026-11-01'
 status_source: curator
 observed:
   checked: '2026-11-01'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 200
+  final_url: https://salb.un.org/en/data
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: global (UN Member States, first and second subnational level)
   temporal: varies by country (historical change tables where contributed)

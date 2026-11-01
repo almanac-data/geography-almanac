@@ -29,9 +29,11 @@ status_since: '2026-11-01'
 status_source: curator
 observed:
   checked: '2026-11-01'
-  reachable: null
-  http_status: null
-  final_url: null
+  reachable: true
+  http_status: 200
+  final_url: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html
+  redirect_chain: []
+  fingerprint_result: no-baseline
 coverage:
   spatial: United States, Puerto Rico and Island Areas (nation down to census block)
   temporal: 2007-present as shapefiles (2026 edition latest); ASCII TIGER/Line for 2006 and earlier
