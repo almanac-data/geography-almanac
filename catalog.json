@@ -1,9 +1,9 @@
 {
   "name": "Geography Almanac",
   "description": "An open, versioned index of public geographic data.",
-  "count": 2,
+  "count": 3,
   "by_status": {
-    "live": 2
+    "live": 3
   },
   "entries": [
     {
@@ -111,6 +111,62 @@
       "license": "Copernicus full, free and open data policy (Commission Delegated Regulation (EU) No 1159/2013; source attribution required)",
       "attribution": "European Union's Copernicus Land Monitoring Service information",
       "notes": "Human-verified 2026-11-01: HTTP 200 (curl; content read with headless Chromium). The product page says CLC \"offers a pan-European land cover and land use inventory with 44 thematic classes\" and \"is updated with new status and change layers every six years—with the most recent update made in 2018\"; datasets listed are CLC 2018, 2012, 2006, 2000, 1990 plus change layers. The CLC 2018 download tab offers pre-packaged Europe files (version v2020_20u1): 100 m raster GeoTIFF (125 MB), vector GDB (5 GB) and GPKG (4 GB), plus WMS, REST API and a CLMS download API. The DOI recorded is the one for the CLC 2018 raster; the vector DOI is 10.2909/71c95a07-e296-44fc-b22b-415f42acfdf0. No CLC 2024 release was listed on the page.\nLicence checked 2026-11-01: https://land.copernicus.eu/en/data-policy states \"The Copernicus land monitoring products and services are made available on a principle of full, open and free access, as established by the Commission Delegated Regulation (EU) No 1159/2013\", on condition that users \"inform the public of the source\", state any modification, and do not imply EU endorsement. This is a data-specific policy, not a CC licence. Not checked: whether login is actually required to download, the API itself, or the overlap with the eea-datahub entry in environment-almanac (which is a general EEA hub, not this product).\n"
+    },
+    {
+      "id": "esa-copernicus-dem",
+      "type": "dataset",
+      "title": "Copernicus DEM (GLO-30, GLO-90 and EEA-10 Digital Elevation Model)",
+      "description": "Global digital surface model derived from the TanDEM-X mission (2011-2015), distributed by the European Space Agency under the EU Copernicus programme at 30 m and 90 m worldwide (GLO-30, GLO-90) and 10 m over 39 European countries (EEA-10). The most widely used open global elevation baseline after SRTM.\n",
+      "publisher": "European Space Agency (ESA), Copernicus Contributing Missions, via the Copernicus Data Space Ecosystem",
+      "jurisdiction": {
+        "scope": "regional-bloc",
+        "country": null
+      },
+      "topics": [
+        "elevation",
+        "dem",
+        "dsm",
+        "copernicus",
+        "terrain"
+      ],
+      "source": {
+        "canonical_url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+        "identifiers": {
+          "doi": "10.5270/ESA-c5d3d65"
+        }
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "s3"
+        ],
+        "auth_required": true,
+        "auth_note": "Free Copernicus Data Space Ecosystem registration required; general public may download GLO-30 and GLO-90 only, EEA-10 download is limited to eligible users (public authorities, EU institutions, EU-funded research, etc.).",
+        "rate_limit": null
+      },
+      "format": [
+        "dted",
+        "dged",
+        "inspire"
+      ],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "global (GLO-30, GLO-90); 39 European countries (EEA-10)",
+        "temporal": "TanDEM-X acquisitions 2011-2015 (older DEMs used for gap fill)",
+        "cadence": "irregular"
+      },
+      "license": "ESA User Licence for Copernicus DEM (GLO-30 and GLO-90 free worldwide with mandatory © DLR/Airbus notice; EEA-10 restricted)",
+      "attribution": "© DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved",
+      "notes": "Human-verified 2026-11-01: HTTP 200 (curl; content read with headless Chromium). The collection page describes \"a Digital Surface Model (DSM) that represents the surface of the Earth including buildings, infrastructure and vegetation\" in \"3 different instances: EEA-10, GLO-30 and GLO-90\", says \"Nine releases are currently available\", and that the datasets \"were made available for use in 2019 and will be maintained until 2026\" (worth re-checking after 2026). Access is via the Copernicus Browser, API, and bulk download \"via S3-compatible object storage and OData API using temporary credentials\". This is a DSM, not a bare-earth terrain model.\nLicence checked 2026-11-01: the same page, under \"Licensing and citation guidelines\", states \"The GLO-30 and GLO-90 datasets are available worldwide with a free license\" and requires the notice \"© DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\" (with \"produced using Copernicus WorldDEM-30 ...\" for modified data). EEA-10 access follows the \"ESA-User license for the use of CCM data and CCM Data Access Restrictions\". The full ESA User Licence text was not read. Not checked: the release list, the formats beyond the dataset IDs (DTED, DGED, INSPIRE), and copies hosted elsewhere (e.g. public cloud mirrors).\n"
     }
   ]
 }
