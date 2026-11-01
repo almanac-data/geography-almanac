@@ -1,9 +1,9 @@
 {
   "name": "Geography Almanac",
   "description": "An open, versioned index of public geographic data.",
-  "count": 7,
+  "count": 8,
   "by_status": {
-    "live": 7
+    "live": 8
   },
   "entries": [
     {
@@ -357,6 +357,58 @@
       "license": "unverified — no data-reuse licence found on the product page or the geoftp download folder; IBGE's site terms cover portal use and privacy",
       "attribution": "Fonte: IBGE, Malha Municipal 2025",
       "notes": "Human-verified 2026-11-01: HTTP 200 in headless Chromium, page \"Malha Municipal | IBGE\", but only after a Cloudflare \"Just a moment...\" challenge cleared (about 20 seconds' wait, with a desktop Chrome user agent); curl with a browser User-Agent and a quick headless load both got HTTP 403. The \"O que é\" tab says the product \"retrata a situação vigente da Divisão Político Administrativa (DPA), através da representação vetorial das linhas definidoras das divisas estaduais e limites municipais, utilizada na coleta dos Censos Demográficos e demais pesquisas do IBGE\". \"Sobre a publicação - 2025\" says the 2025 edition has 5573 geocodes (5569 municipalities plus DF, Fernando de Noronha and two operational lagoon areas), is in Shapefile format, SIRGAS 2000 geographic coordinates, UTF-8. Download links go to https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/ (HTTP 200 to curl, no challenge), e.g. Brasil/BR_Municipios_2025.zip.\nLicence checked 2026-11-01: not verified. Neither the product page nor the geoftp folder listing carries a licence statement. The page points to a PDF, \"Malha Municipal Digital e Áreas Territoriais 2025: Informações Técnicas e Legais para a Utilização dos Dados Publicados\" (https://biblioteca.ibge.gov.br/index.php/biblioteca-catalogo?view=detalhes&id=2102268), which may contain usage terms but wasn't read. Other IBGE entries in this workspace also leave the licence unverified. The attribution follows Brazilian convention and isn't a quoted IBGE requirement. Not checked: the zip contents, the census-tract (setores censitários) meshes, and IBGE's geoservices.\n"
+    },
+    {
+      "id": "ign-bd-topo",
+      "type": "dataset",
+      "title": "IGN BD TOPO (France 3D topographic vector database)",
+      "description": "France's national topographic reference database from the Institut national de l'information géographique et forestière (IGN): a metre-precision 3D vector description of administrative units, buildings, hydrography, named places, land cover, services, transport and regulated zones, with stable object identifiers and quarterly editions. Distributed as open data through the Géoplateforme (cartes.gouv.fr).\n",
+      "publisher": "Institut national de l'information géographique et forestière (IGN)",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "FR"
+      },
+      "topics": [
+        "topographic-data",
+        "administrative-boundaries",
+        "buildings",
+        "hydrography",
+        "place-names"
+      ],
+      "source": {
+        "canonical_url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "gpkg",
+        "shp"
+      ],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "France (metropolitan and overseas departments; downloads per département)",
+        "temporal": "current edition 2026-09-15 (version 3.5); historical editions back to the 1990s as BD TOPO Historique",
+        "cadence": "quarterly"
+      },
+      "license": "Etalab Licence Ouverte / Open Licence (per the dataset's ISO metadata on the Géoplateforme)",
+      "attribution": "IGN, BD TOPO",
+      "notes": "Human-verified 2026-11-01: HTTP 200 (curl; content read with headless Chromium). The old address https://geoservices.ign.fr/bdtopo redirects to this cartes.gouv.fr page, which is catalogued. The page reads \"La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et de ses infrastructures, de précision métrique\", lists the themes (administratif, bâti, hydrographie, lieux nommés, occupation du sol, services et activités, transport, zones réglementées), shows \"Last updated 10 days ago\", and also describes the weekly BD TOPO Express and the quarterly Différentiel. The Géoplateforme download feed (https://data.geopf.fr/telechargement/resource/BDTOPO) listed, for Paris (D075), 3.5 all-themes files in GPKG and SHP (Lambert-93) dated 2025-12-15, 2026-03-15, 2026-06-15 and 2026-09-15, plus older 2.0 editions.\nLicence checked 2026-11-01: the licence accordion on the page would not expand in headless Chromium, so the licence was read from the dataset's ISO 19139 record via the Géoplateforme CSW (https://data.geopf.fr/csw?service=CSW&version=2.0.2&request=GetRecordById&id=IGNF_BD-TOPO&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full), whose useConstraints read \"Licence Ouverte / Open License (compatible ODC-BY, CC-BY 2.0)\" linking https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf. This is dataset-level metadata. The licence version number wasn't stated in the record. Not checked: the exact attribution wording IGN requests, or the WMTS/WFS services in detail.\n"
     }
   ]
 }
