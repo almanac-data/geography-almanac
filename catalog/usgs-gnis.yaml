@@ -1,0 +1,44 @@
+id: usgs-gnis
+type: dataset
+title: USGS Geographic Names Information System (GNIS)
+description: |
+  The Federal and national standard gazetteer of US geographic names, maintained by the USGS for the U.S. Board on Geographic Names: the official name, feature class, location and variant names of physical and cultural features in the United States, its territories and Antarctica (excluding roads and highways). The authoritative source for US place-name spelling and feature IDs.
+publisher: U.S. Geological Survey, for the U.S. Board on Geographic Names
+jurisdiction:
+  scope: national
+  country: US
+topics:
+- place-names
+- gazetteer
+- toponymy
+source:
+  canonical_url: https://www.usgs.gov/tools/geographic-names-information-system-gnis
+access:
+  method:
+  - web
+  - bulk
+  - api
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- txt
+- gdb
+- gpkg
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: United States, territories, associated areas, and Antarctica
+  temporal: current and historical feature names (static legacy archive last updated August 2021)
+  cadence: irregular
+license: public-domain (US Gov work; USGS Copyrights and Credits policy)
+attribution: U.S. Geological Survey, Geographic Names Information System (GNIS)
+notes: |
+  Human-verified 2026-11-01: HTTP 200 to curl with a browser User-Agent; a plain curl User-Agent got 403 and headless Chromium got a CloudFront 403 page on usgs.gov. The page calls GNIS "The Federal and national standard for geographic nomenclature" and links domestic and Antarctic name search tools, a GNIS REST ArcGIS service and data downloads. It says GNIS holds "the Federally recognized name of each feature" for physical and cultural features "but not including roads and highways". The Download GNIS Data page (https://www.usgs.gov/us-board-on-geographic-names/download-gnis-data, HTTP 200) states "Data products are refreshed every other month", offers "pipe-delimited text (TXT) files" plus "file geodatabase [GDB] and GeoPackage [GPKG]", downloaded through The National Map Downloader, and notes an Archive file of "Static legacy domestic and Antarctica names data last updated August 2021".
+  Licence checked 2026-11-01: USGS Copyrights and Credits (https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits) states "USGS-authored or produced data and information are considered to be in the U.S. Public Domain". This is an agency-wide data policy. Cadence is recorded as irregular although the download page says products are refreshed every other month (no matching schema value). Foreign names are not in GNIS; see nga-geonet-names-server. Not checked: the REST service or the file contents.
