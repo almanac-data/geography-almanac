@@ -1,11 +1,61 @@
 {
   "name": "Geography Almanac",
   "description": "An open, versioned index of public geographic data.",
-  "count": 1,
+  "count": 2,
   "by_status": {
-    "live": 1
+    "live": 2
   },
   "entries": [
+    {
+      "id": "census-tiger-line",
+      "type": "dataset",
+      "title": "US Census Bureau TIGER/Line Shapefiles",
+      "description": "The Census Bureau's annual extracts of its MAF/TIGER geographic database: legal and statistical boundaries (states, counties, county subdivisions, places, tracts, block groups, blocks, congressional and legislative districts, ZCTAs, PUMAs and more), roads, rail, hydrography and landmarks, with the geographic codes that join to Census data. The standard boundary files behind US statistics.\n",
+      "publisher": "U.S. Census Bureau",
+      "jurisdiction": {
+        "scope": "national",
+        "country": "US"
+      },
+      "topics": [
+        "administrative-boundaries",
+        "statistical-geography",
+        "census-geography",
+        "roads"
+      ],
+      "source": {
+        "canonical_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "ftp"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "shp"
+      ],
+      "status": "live",
+      "status_since": "2026-11-01",
+      "status_source": "curator",
+      "observed": {
+        "checked": "2026-11-01",
+        "reachable": null,
+        "http_status": null,
+        "final_url": null
+      },
+      "coverage": {
+        "spatial": "United States, Puerto Rico and Island Areas (nation down to census block)",
+        "temporal": "2007-present as shapefiles (2026 edition latest); ASCII TIGER/Line for 2006 and earlier",
+        "cadence": "annual"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Census Bureau, TIGER/Line Shapefiles (year)",
+      "notes": "Human-verified 2026-11-01: HTTP 200 (curl; content read with headless Chromium). The page lists \"Shapefile - 2007 to Present\" and \"TIGER/Line ASCII format - 2006 and earlier\" and says \"The core TIGER/Line Files and Shapefiles do not include demographic data, but they do contain geographic entity codes that can be linked to the Census Bureau’s demographic data\". Latest: \"2026 TIGER/Line Shapefiles ... All legal boundaries and names are as of January 1, 2026. The 2026 TIGER/Line Shapefiles were released on October 14, 2026\", with Download, Web Interface and FTP Archive links.\nLicence checked 2026-11-01: no data-specific licence statement was found. The Census open-data page (https://www.census.gov/topics/research/research-transparency-public-access/open-data.html) says the Bureau shares \"its public data as open data\" under OMB open data policy, but does not use the words \"public domain\". The public-domain status rests on the Census Bureau being a federal agency (17 U.S.C. §105), which is how other Census entries in this workspace record it. Not checked: the geodatabase and KML cartographic boundary products (a separate series), or the TIGERweb services.\n"
+    },
     {
       "id": "copernicus-clms-corine-land-cover",
       "type": "dataset",
