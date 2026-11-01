@@ -1,0 +1,43 @@
+id: inegi-marco-geoestadistico
+type: dataset
+title: INEGI Marco Geoestadístico (Mexico Geostatistical Framework)
+description: |
+  Mexico's national geostatistical framework from INEGI: the official division of the country into states (AGEE), municipalities (AGEM), basic geostatistical areas (AGEB), localities and urban blocks, used to geo-reference every census and survey. The boundary set Mexican statistics are published against.
+publisher: Instituto Nacional de Estadística y Geografía (INEGI)
+jurisdiction:
+  scope: national
+  country: MX
+topics:
+- administrative-boundaries
+- statistical-geography
+- localities
+- census-geography
+source:
+  canonical_url: https://www.inegi.org.mx/temas/mg/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- zip
+- pdf
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Mexico (national, state, municipality, AGEB, locality, block)
+  temporal: editions from 1995 to 2026 (latest "Marco Geoestadístico, Encuesta Intercensal 2025", edition 2026)
+  cadence: annual
+license: INEGI Términos de Libre Uso de la Información (free use with attribution)
+attribution: 'Fuente: INEGI, Marco Geoestadístico (edition)'
+notes: |
+  Human-verified 2026-11-01: HTTP 200 in headless Chromium only; curl (even with a browser User-Agent) was redirected to a Radware bot-manager challenge (validate.perfdrive.com), so this source needs the headless rung. The page describes the framework as "un sistema único y de carácter nacional diseñado por el INEGI, el cual presenta la división geoestadística del territorio continental e insular en diferentes niveles de desagregación, para referir geográficamente la información estadística de los censos y encuestas". The Descargas tab listed 29 results with editions 1995-2026; the newest were "Marco Geoestadístico, Encuesta Intercensal 2025" (edition 2026, temporal coverage 2025-07-31 to 2025-11-14, 2.74 GB zip) and "Marco Geoestadístico 2025" (2.7 GB zip), plus 1:4 000 000 national charts as PDF.
+  Licence checked 2026-11-01: INEGI's Términos de uso (https://www.inegi.org.mx/inegi/terminos.html, read in headless Chromium) say information may be used under the "Términos de Libre Uso de la Información del INEGI" and require: "Debe otorgar los créditos correspondientes al INEGI como autor ... de la siguiente manera: “Fuente: INEGI, nombre del producto de donde se extrae la información”". This is INEGI's general information-use licence, not a product-specific one. The cadence is inferred from the yearly editions. Not checked: the GIS formats inside the zip files (likely shapefile), or INEGI's map services and API.
