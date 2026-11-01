@@ -1,0 +1,48 @@
+id: copernicus-clms-corine-land-cover
+type: dataset
+title: Copernicus Land Monitoring Service CORINE Land Cover
+description: |
+  Pan-European land cover and land use inventory in 44 thematic classes, produced for reference years 1990, 2000, 2006, 2012 and 2018 with change layers between them, at a 25 ha minimum mapping unit. The standard harmonised land cover base for Europe, run by the European Environment Agency under the EU's Copernicus programme.
+publisher: European Environment Agency, Copernicus Land Monitoring Service (European Union)
+jurisdiction:
+  scope: regional-bloc
+  country: null
+topics:
+- land-cover
+- land-use
+- corine
+- copernicus
+- europe
+source:
+  canonical_url: https://land.copernicus.eu/en/products/corine-land-cover
+  identifiers:
+    doi: 10.2909/960998c1-1870-4e82-8051-6485205ebbac
+access:
+  method:
+  - web
+  - bulk
+  - api
+  auth_required: true
+  auth_note: Downloads go through an "Add to cart" flow next to a Register/Login link; a free CLMS account is likely needed but this was not tested.
+  rate_limit: null
+format:
+- geotiff
+- gdb
+- gpkg
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: Europe (EEA member and cooperating countries)
+  temporal: 1990, 2000, 2006, 2012, 2018 reference years
+  cadence: irregular
+license: Copernicus full, free and open data policy (Commission Delegated Regulation (EU) No 1159/2013; source attribution required)
+attribution: European Union's Copernicus Land Monitoring Service information
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl; content read with headless Chromium). The product page says CLC "offers a pan-European land cover and land use inventory with 44 thematic classes" and "is updated with new status and change layers every six years—with the most recent update made in 2018"; datasets listed are CLC 2018, 2012, 2006, 2000, 1990 plus change layers. The CLC 2018 download tab offers pre-packaged Europe files (version v2020_20u1): 100 m raster GeoTIFF (125 MB), vector GDB (5 GB) and GPKG (4 GB), plus WMS, REST API and a CLMS download API. The DOI recorded is the one for the CLC 2018 raster; the vector DOI is 10.2909/71c95a07-e296-44fc-b22b-415f42acfdf0. No CLC 2024 release was listed on the page.
+  Licence checked 2026-11-01: https://land.copernicus.eu/en/data-policy states "The Copernicus land monitoring products and services are made available on a principle of full, open and free access, as established by the Commission Delegated Regulation (EU) No 1159/2013", on condition that users "inform the public of the source", state any modification, and do not imply EU endorsement. This is a data-specific policy, not a CC licence. Not checked: whether login is actually required to download, the API itself, or the overlap with the eea-datahub entry in environment-almanac (which is a general EEA hub, not this product).
