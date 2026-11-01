@@ -1,0 +1,42 @@
+id: un-salb
+type: dataset
+title: UN Second Administrative Level Boundaries (SALB)
+description: |
+  United Nations programme that collects, from each Member State's national geospatial information authority, the structure, names and boundaries of administrative units down to the second subnational level, with historical tables of changes over time. The reference point for comparable subnational geographies across countries.
+publisher: United Nations Statistics Division and Geospatial Information Section (SALB programme)
+jurisdiction:
+  scope: multilateral
+  country: null
+topics:
+- administrative-boundaries
+- subnational-units
+- place-names
+- sdg
+source:
+  canonical_url: https://salb.un.org/en/data
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- xlsx
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (UN Member States, first and second subnational level)
+  temporal: varies by country (historical change tables where contributed)
+  cadence: irregular
+license: proprietary-noncommercial (SALB Terms of Use 2021; copyright United Nations, no modification of geometry, non-commercial only)
+attribution: from SALB Data, United Nations, plus the contributing national authority named in the metadata
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). The Data page lists "1 - 50 of 197 Member States" with each country's National Geospatial Information Authority, plus columns for Public Contacts, Historic Table and Geospatial Datasets. On the day checked, only some countries (e.g. Benin, Burkina Faso, Cameroon, Togo, Tonga) had a downloadable historic table (xlsx), and the Geospatial Datasets column read "None" for every country seen on pages 1 and 3, so boundary geometry may not be publicly downloadable from this page at present. The home page states the aim is geospatial data "for first and second level below national, at 1:1 million scale".
+  Licence checked 2026-11-01: Terms of Use PDF (https://salb.un.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf, linked from the Methodology page; curl got 403, fetched via a browser session) states "Copyright of the SALB Data (including all codes, historical tables, and geospatial data) is vested in the United Nations", "Users are prohibited from changing the geometry or content of the SALB Data without consent of the Contributor", and "The SALB Data may be used for only non-commercial purposes." Derived products must include the phrase "from SALB Data, United Nations". This is a data-specific licence and is NOT an open licence. Not checked: geometry formats, per-country vintages, or whether a separate UN geoportal distributes the boundaries.
