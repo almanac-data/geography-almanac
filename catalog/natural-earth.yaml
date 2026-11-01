@@ -1,0 +1,44 @@
+id: natural-earth
+type: dataset
+title: Natural Earth (public-domain small-scale world map data)
+description: |
+  Public-domain vector and raster world map data at 1:10m, 1:50m and 1:110m scales: country and first-level subdivision boundaries (including disputed-area treatments), populated places, coastlines, rivers, lakes, relief and other cultural and physical themes, generalised so that layers align. A de facto default for small-scale world and regional maps, made by volunteers rather than an official mapping agency.
+publisher: Natural Earth (volunteer project; primary authors Tom Patterson and Nathaniel Vaughn Kelso; supported by the North American Cartographic Information Society, NACIS)
+jurisdiction:
+  scope: international-ngo
+  country: null
+topics:
+- administrative-boundaries
+- base-maps
+- populated-places
+- physical-geography
+source:
+  canonical_url: https://www.naturalearthdata.com/downloads/
+access:
+  method:
+  - web
+  - bulk
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format:
+- shp
+- sqlite
+- gpkg
+status: live
+status_since: '2026-11-01'
+status_source: curator
+observed:
+  checked: '2026-11-01'
+  reachable: null
+  http_status: null
+  final_url: null
+coverage:
+  spatial: global (1:10m, 1:50m, 1:110m)
+  temporal: current version (release history not checked)
+  cadence: irregular
+license: public-domain (Natural Earth Terms of Use)
+attribution: Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com.
+notes: |
+  Human-verified 2026-11-01: HTTP 200 (curl and headless Chromium). The home page says "Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales" and that it "was built through a collaboration of many volunteers and is supported by NACIS (North American Cartographic Information Society)". The Downloads page offers "all vector themes as SHP (576 mb), SQLite (423 mb), or GeoPackage (436 mb)" and per-scale Cultural, Physical and Raster pages. Publisher honesty: this is a volunteer-made dataset, not an official or treaty body. jurisdiction.scope is set to international-ngo only because the schema has no better value. Its boundaries are cartographic generalisations, and its treatment of disputed borders reflects the project's editorial choices, not any government's position; prefer UN SALB, Eurostat GISCO or national agencies where official boundaries matter.
+  Licence checked 2026-11-01: Terms of Use (https://www.naturalearthdata.com/about/terms-of-use/) state "All versions of Natural Earth raster + vector map data found on this website are in the public domain" and "No permission is needed to use Natural Earth. Crediting the authors is unnecessary". The attribution recorded is the optional "long text" citation the page suggests. The page also quotes a Washington Post licence for some source data granted to Natural Earth. The site footer "© 2009 - 2026. Natural Earth. All rights reserved." refers to the website, not the data. Not checked: the current version number (the GitHub repo's latest-release API returned nothing), or the raster themes.
