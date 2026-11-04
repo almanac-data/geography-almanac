@@ -34,6 +34,13 @@ observed:
   final_url: https://www.inegi.org.mx/temas/mg/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261012001636/https://www.inegi.org.mx/temas/mg/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-12'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: Mexico (national, state, municipality, AGEB, locality, block)
   temporal: editions from 1995 to 2026 (latest "Marco Geoestadístico, Encuesta Intercensal 2025", edition 2026)

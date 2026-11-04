@@ -49,6 +49,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104212016/https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "United States, Puerto Rico and Island Areas (nation down to census block)",
         "temporal": "2007-present as shapefiles (2026 edition latest); ASCII TIGER/Line for 2006 and earlier",
@@ -107,6 +117,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261016092433/https://land.copernicus.eu/en/products/corine-land-cover",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-16",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "Europe (EEA member and cooperating countries)",
         "temporal": "1990, 2000, 2006, 2012, 2018 reference years",
@@ -165,6 +185,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104212521/https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "global (GLO-30, GLO-90); 39 European countries (EEA-10)",
         "temporal": "TanDEM-X acquisitions 2011-2015 (older DEMs used for gap fill)",
@@ -217,6 +247,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261001120959/https://ec.europa.eu/eurostat/web/gisco/geodata",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-01",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "EU member states and EFTA/candidate countries (varies by layer); countries layer is global",
         "temporal": "varies by layer (multiple NUTS and LAU vintages)",
@@ -267,6 +307,16 @@
         ],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20260610152158/https://www.ga.gov.au/scientific-topics/national-location-information/digital-elevation-data",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-06-10",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 200)."
+        }
+      ],
       "coverage": {
         "spatial": "Australia (national mosaics; LiDAR and catchment DEMs for covered areas)",
         "temporal": "varies by product (5 m LiDAR DEM from surveys 2001-2015; SRTM-derived DEMs from 2000 data)",
@@ -315,6 +365,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104213440/https://service.gsi.go.jp/kiban/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "Japan (national)",
         "temporal": "current editions, with some past basic-item and DEM releases also downloadable",
@@ -365,6 +425,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261024121505/https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-24",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "Brazil (country, major regions, states, intermediate and immediate regions, municipalities)",
         "temporal": "current edition 2025 (earlier editions listed under Edições)",
@@ -419,6 +489,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104213930/https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "France (metropolitan and overseas departments; downloads per département)",
         "temporal": "current edition 2026-09-15 (version 3.5); historical editions back to the 1990s as BD TOPO Historique",
@@ -471,6 +551,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261012001636/https://www.inegi.org.mx/temas/mg/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-10-12",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 0)."
+        }
+      ],
       "coverage": {
         "spatial": "Mexico (national, state, municipality, AGEB, locality, block)",
         "temporal": "editions from 1995 to 2026 (latest \"Marco Geoestadístico, Encuesta Intercensal 2025\", edition 2026)",
@@ -524,6 +614,16 @@
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
       },
+      "recovery": [
+        {
+          "via": "wayback",
+          "url": "https://web.archive.org/web/20261104214526/https://www.naturalearthdata.com/downloads/",
+          "authenticity": "timestamped",
+          "permission": "ok",
+          "captured": "2026-11-04",
+          "notes": "Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now."
+        }
+      ],
       "coverage": {
         "spatial": "global (1:10m, 1:50m, 1:110m)",
         "temporal": "current version (release history not checked)",
