@@ -34,6 +34,13 @@ observed:
   final_url: https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261104212016/https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-04'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now.'
 coverage:
   spatial: United States, Puerto Rico and Island Areas (nation down to census block)
   temporal: 2007-present as shapefiles (2026 edition latest); ASCII TIGER/Line for 2006 and earlier

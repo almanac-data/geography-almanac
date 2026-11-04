@@ -32,6 +32,13 @@ observed:
   redirect_chain:
   - https://www.ga.gov.au/scientific-topics/national-location-information/elvis-elevation-information-system
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20260610152158/https://www.ga.gov.au/scientific-topics/national-location-information/digital-elevation-data
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-06-10'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: the newest existing capture (Save Page Now returned 200).'
 coverage:
   spatial: Australia (national mosaics; LiDAR and catchment DEMs for covered areas)
   temporal: varies by product (5 m LiDAR DEM from surveys 2001-2015; SRTM-derived DEMs from 2000 data)

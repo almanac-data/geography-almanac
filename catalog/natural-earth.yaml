@@ -35,6 +35,13 @@ observed:
   final_url: https://www.naturalearthdata.com/downloads/
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261104214526/https://www.naturalearthdata.com/downloads/
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-04'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-04: a capture it requested from Save Page Now.'
 coverage:
   spatial: global (1:10m, 1:50m, 1:110m)
   temporal: current version (release history not checked)
