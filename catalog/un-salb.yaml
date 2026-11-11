@@ -33,6 +33,13 @@ observed:
   final_url: https://salb.un.org/en/data
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261111220223/https://salb.un.org/en/data
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-11-11'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: a capture it requested from Save Page Now.'
 coverage:
   spatial: global (UN Member States, first and second subnational level)
   temporal: varies by country (historical change tables where contributed)
