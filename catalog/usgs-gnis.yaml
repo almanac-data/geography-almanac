@@ -35,6 +35,13 @@ observed:
   final_url: https://www.usgs.gov/tools/geographic-names-information-system-gnis
   redirect_chain: []
   fingerprint_result: no-baseline
+recovery:
+- via: wayback
+  url: https://web.archive.org/web/20261031081122/https://www.usgs.gov/tools/geographic-names-information-system-gnis
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-31'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0).'
 coverage:
   spatial: United States, territories, associated areas, and Antarctica
   temporal: current and historical feature names (static legacy archive last updated August 2021)

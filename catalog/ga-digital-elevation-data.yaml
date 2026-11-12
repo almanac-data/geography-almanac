@@ -34,6 +34,12 @@ observed:
   fingerprint_result: no-baseline
 recovery:
 - via: wayback
+  url: https://web.archive.org/web/20261028192732/https://www.ga.gov.au/scientific-topics/national-location-information/digital-elevation-data
+  authenticity: timestamped
+  permission: ok
+  captured: '2026-10-28'
+  notes: 'Recorded by scripts/capture_archives.py on 2026-11-11: the newest existing capture (Save Page Now returned 0).'
+- via: wayback
   url: https://web.archive.org/web/20260610152158/https://www.ga.gov.au/scientific-topics/national-location-information/digital-elevation-data
   authenticity: timestamped
   permission: ok
