@@ -42,7 +42,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html",
@@ -110,7 +110,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://land.copernicus.eu/en/products/corine-land-cover",
@@ -178,7 +178,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
@@ -240,7 +240,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://ec.europa.eu/eurostat/web/gisco/geodata",
@@ -298,7 +298,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.ga.gov.au/scientific-topics/national-location-information/elvis-elevation-information-system",
@@ -366,7 +366,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://service.gsi.go.jp/kiban/",
@@ -426,9 +426,9 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
-        "http_status": 200,
+        "http_status": 403,
         "final_url": "https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html",
         "redirect_chain": [],
         "fingerprint_result": "no-baseline"
@@ -490,7 +490,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO",
@@ -552,7 +552,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.inegi.org.mx/temas/mg/",
@@ -615,7 +615,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.naturalearthdata.com/downloads/",
@@ -681,7 +681,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://open.canada.ca/data/en/dataset/8ba2aa2a-7bb9-4448-b4d7-f164409fe056",
@@ -749,7 +749,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://osdatahub.os.uk/data/downloads/open",
@@ -810,7 +810,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://salb.un.org/en/data",
@@ -873,7 +873,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.usgs.gov/tools/geographic-names-information-system-gnis",
@@ -933,7 +933,7 @@
       "status_since": "2026-11-01",
       "status_source": "curator",
       "observed": {
-        "checked": "2026-11-12",
+        "checked": "2026-11-13",
         "reachable": true,
         "http_status": 200,
         "final_url": "https://www.usgs.gov/programs/national-geospatial-program/national-map",
